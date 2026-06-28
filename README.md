@@ -56,13 +56,26 @@ land-cover-classification/
 ├── README.md                         # This file
 ├── .gitignore                        # Excludes weights, datasets, caches
 │
-└── results/                          # Visualization artifacts
-    ├── training_curves.png
-    ├── per_class_iou.png
-    ├── predictions.png
-    ├── test_indistribution.png
-    ├── test_distributionshift.png
-    └── test_ood.png
+└── results/                          # Visualization & Inference artifacts
+    ├── training_curves.PNG           # Loss and mIoU curves
+    ├── per_class_IoU.PNG             # Class-wise performance metrics
+    ├── prediction1.PNG               # Sample validation grid
+    ├── app_screenshot.PNG            # Gradio demo interface
+    │
+    ├── 195553_sat.jpg                # In-distribution: DeepGlobe sample
+    ├── 195553_predicted_mask.webp
+    ├── 195553_confidence_map.webp
+    ├── 195553_donut_chart.webp
+    │
+    ├── iowa_sat_image.PNG            # Distribution shift: Iowa sample
+    ├── iowa_predicted_mask.webp
+    ├── iowa_confidence_map.webp
+    ├── iowa_donut_chart.webp
+    │
+    ├── bergen_street.PNG             # Out-of-distribution: Street photo
+    ├── bergen_street_predicted_mask.webp
+    ├── bergen_street_confidence_map.webp
+    └── bergen_street_donut_chart.webp
 ```
 
 ---
