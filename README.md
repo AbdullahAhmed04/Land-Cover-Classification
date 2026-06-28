@@ -50,7 +50,7 @@ land-cover-classification/
 
 ---
 
-## 🛰️ Datasets
+## Datasets
 
 ### DeepGlobe Land Cover Classification
 - **Source:** [Kaggle — balraj98](https://www.kaggle.com/datasets/balraj98/deepglobe-land-cover-classification-dataset)
