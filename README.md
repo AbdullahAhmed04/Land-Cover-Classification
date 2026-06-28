@@ -1,4 +1,4 @@
-# 🛰️ Land Cover Classification
+# Land Cover Classification
 
 Semantic segmentation of satellite and aerial imagery using deep learning, trained on two public datasets: **DeepGlobe Land Cover** and **LandCover.ai**.
 
@@ -6,7 +6,7 @@ Built as an end-of-course group project (Phase 1 + Phase 2 combined deliverable)
 
 ---
 
-## 📊 Results
+## Results
 
 | Dataset | Architecture | Encoder | Classes | Val mIoU |
 |---|---|---|---|---|
@@ -29,7 +29,7 @@ Built as an end-of-course group project (Phase 1 + Phase 2 combined deliverable)
 
 ---
 
-## 🗂️ Repository Structure
+## Repository Structure
 
 ```
 land-cover-classification/
@@ -69,7 +69,7 @@ land-cover-classification/
 
 ---
 
-## 🏗️ Architecture
+## Architecture
 
 ```
 Input (512×512 RGB)
@@ -90,14 +90,14 @@ Input (512×512 RGB)
 
 ---
 
-## 🖥️ Hardware
+## Hardware
 
 - 2× NVIDIA Tesla T4 (15GB each) via Kaggle GPU accelerator
 - CUDA 13.0 / PyTorch 2.x / Python 3.12
 
 ---
 
-## 🚀 Reproduction
+## Reproduction
 
 ### 1. Open the notebook on Kaggle
 
@@ -128,7 +128,7 @@ To **resume after a session disconnect** without retraining from scratch, see Se
 
 ---
 
-## 🎮 Interactive Demo
+## Interactive Demo
 
 Section 17 of the notebook launches a Gradio web interface:
 
@@ -146,7 +146,7 @@ demo.launch(share=True)  # generates a public URL
 
 ---
 
-## 🔍 Error Analysis Summary
+## Error Analysis Summary
 
 Three-tier inference testing was performed to assess model behaviour across input types:
 
@@ -160,7 +160,7 @@ Three-tier inference testing was performed to assess model behaviour across inpu
 
 ---
 
-## 📚 References
+## References
 
 1. Demir, I. et al. *DeepGlobe 2018: A Challenge to Parse the Earth through Satellite Images.* CVPR Workshops, 2018.
 2. Boguszewski, A. et al. *LandCover.ai: Dataset for Automatic Mapping of Buildings, Woodlands, Water and Roads from Aerial Imagery.* CVPR Workshops, 2021. [arXiv:2005.02264](https://arxiv.org/abs/2005.02264)
@@ -170,7 +170,7 @@ Three-tier inference testing was performed to assess model behaviour across inpu
 
 ---
 
-## ⚠️ Limitations
+## Limitations
 
 - Model trained exclusively on DeepGlobe's source regions (Thailand, Indonesia, India) — may not generalise well to very different climate zones or sensor types
 - Rangeland class is consistently the weakest (IoU 0.349) due to visual overlap with Agriculture and Barren Land
