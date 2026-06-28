@@ -1,6 +1,6 @@
 # Land Cover Classification
 
-Semantic segmentation of satellite and aerial imagery using deep learning, trained on two public datasets: **DeepGlobe Land Cover** and **LandCover.ai**. Built as an end-of-course group project covering both Phase 1 (benchmarking, dataset analysis, research gap) and Phase 2 (full implementation and evaluation).
+Semantic segmentation of satellite and aerial imagery using deep learning, trained on two public datasets: **DeepGlobe Land Cover** and **LandCover.ai**.
 
 ---
 
