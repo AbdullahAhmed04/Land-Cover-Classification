@@ -168,7 +168,7 @@ Features include: image upload with class visibility filter, predicted mask over
    - `adrianboguszewski/landcoverai`
 3. Set accelerator to **GPU T4 x2** under Settings
 4. Run all cells — the first cell installs dependencies automatically
-5. Training takes approximately 2–3 hours on dual T4
+5. Training takes approximately 1-2 hours on dual T4
 
 **Resuming after a session disconnect:** The training loop (Section 10) saves `latest_model.pth` after every epoch. If the session restarts but `/kaggle/working` is still intact, re-running the training cell will automatically detect this file and resume from the last completed epoch. See Section 2b in the notebook for full instructions on both reconnect scenarios.
 
