@@ -196,5 +196,7 @@ Features include: image upload with class visibility filter, predicted mask over
 ## License
 
 Code in this repository is released under the MIT License.
+
 DeepGlobe dataset: see [original challenge terms](https://competitions.codalab.org/competitions/18468).
+
 LandCover.ai dataset: [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/).
