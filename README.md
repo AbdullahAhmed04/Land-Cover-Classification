@@ -7,21 +7,19 @@ Semantic segmentation of satellite and aerial imagery using deep learning, train
 ## Visual Results
 
 ### Training & Benchmarking
-![Training Curves](results/training_curves.png)
-*Figure 1: Training progress showing steady convergence of Loss and mIoU across 30 epochs.*
+![Training Curves](results/training_curves.PNG)
+*Figure 1: Training progress showing steady convergence of Loss and mIoU.*
 
-![Per-Class IoU](results/per_class_iou.png)
+![Per-Class IoU](results/per_class_IoU.PNG)
 *Figure 2: Per-class validation IoU breakdown for the DeepGlobe dataset.*
 
 ### Qualitative Predictions
-![Predictions](results/predictions.png)
-*Figure 3: Sample validation grid: Input Satellite Image (left) | Ground Truth (middle) | Predicted Mask (right).*
+![Predictions](results/prediction1.PNG)
+*Figure 3: Sample validation grid showcasing model segmentation performance.*
 
-### Inference Testing (Gradio Demo)
-| In-Distribution | Distribution Shift | Out-of-Distribution (OOD) |
-| :---: | :---: | :---: |
-| ![Test In-Distribution](results/test_indistribution.png) | ![Test Distribution Shift](results/test_distributionshift.png) | ![Test OOD](results/test_ood.png) |
-*Figure 4: Model robustness evaluation across diverse input domains.*
+### Interactive Demo (Gradio)
+![Gradio App](results/app_screenshot.PNG)
+*Figure 4: The Gradio web interface, featuring dynamic visualizations of model predictions, confidence maps, and class distribution charts.*
 
 ---
 
