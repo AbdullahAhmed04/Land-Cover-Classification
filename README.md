@@ -4,7 +4,28 @@ Semantic segmentation of satellite and aerial imagery using deep learning, train
 
 ---
 
-## Results
+## Visual Results
+
+### Training & Benchmarking
+![Training Curves](results/training_curves.png)
+*Figure 1: Training progress showing steady convergence of Loss and mIoU across 30 epochs.*
+
+![Per-Class IoU](results/per_class_iou.png)
+*Figure 2: Per-class validation IoU breakdown for the DeepGlobe dataset.*
+
+### Qualitative Predictions
+![Predictions](results/predictions.png)
+*Figure 3: Sample validation grid: Input Satellite Image (left) | Ground Truth (middle) | Predicted Mask (right).*
+
+### Inference Testing (Gradio Demo)
+| In-Distribution | Distribution Shift | Out-of-Distribution (OOD) |
+| :---: | :---: | :---: |
+| ![Test In-Distribution](results/test_indistribution.png) | ![Test Distribution Shift](results/test_distributionshift.png) | ![Test OOD](results/test_ood.png) |
+*Figure 4: Model robustness evaluation across diverse input domains.*
+
+---
+
+## Performance Summary
 
 | Dataset | Architecture | Encoder | Classes | Best Val mIoU | Best Epoch |
 |---|---|---|---|---|---|
@@ -23,13 +44,13 @@ Semantic segmentation of satellite and aerial imagery using deep learning, train
 | Rangeland | 0.3482 | Magenta |
 | Unknown | 0.0000 | Black (ignored in training) |
 
-**Key finding:** Rangeland (IoU 0.348) is the weakest class due to visual ambiguity with Agriculture and Barren Land in satellite imagery — a well-documented challenge in DeepGlobe benchmarks. This is corroborated by qualitative inference results where mixed scrubland regions are consistently the least spatially coherent in the predicted mask.
+**Key finding:** Rangeland (IoU 0.348) is the weakest class due to visual ambiguity with Agriculture and Barren Land in satellite imagery. This is corroborated by qualitative inference where mixed scrubland regions are consistently the least spatially coherent in the predicted mask.
 
 ---
 
 ## Repository Structure
 
-```
+```text
 land-cover-classification/
 │
 ├── land_cover_classification.ipynb   # Main notebook (Phase 1 + Phase 2)
@@ -37,13 +58,13 @@ land-cover-classification/
 ├── README.md                         # This file
 ├── .gitignore                        # Excludes weights, datasets, caches
 │
-└── results/
-    ├── training_curves.png           # Loss and mIoU curves over 30 epochs
-    ├── per_class_iou.png             # Per-class IoU bar chart
-    ├── predictions.png               # Qualitative segmentation grid (Section 13)
-    ├── test_indistribution.png       # Gradio: DeepGlobe farmland sample
-    ├── test_distributionshift.png    # Gradio: Google Earth suburban aerial
-    └── test_ood.png                  # Gradio: ground-level street photo
+└── results/                          # Visualization artifacts
+    ├── training_curves.png
+    ├── per_class_iou.png
+    ├── predictions.png
+    ├── test_indistribution.png
+    ├── test_distributionshift.png
+    └── test_ood.png
 ```
 
 ---
