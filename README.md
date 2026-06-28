@@ -51,7 +51,7 @@ Semantic segmentation of satellite and aerial imagery using deep learning, train
 ```text
 land-cover-classification/
 │
-├── land_cover_classification.ipynb   # Main notebook (Phase 1 + Phase 2)
+├── land_cover_classification.ipynb   # Main notebook
 ├── requirements.txt                  # Python dependencies
 ├── README.md                         # This file
 ├── .gitignore                        # Excludes weights, datasets, caches
